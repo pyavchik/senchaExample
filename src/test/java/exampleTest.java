@@ -11,9 +11,10 @@ import static io.trueautomation.client.TrueAutomationHelper.ta;
 
 public class exampleTest {
     private WebDriver driver;
-    private By loginBtn = By.xpath(ta("loginBtn", ".//button[@id='ext-element-43']"));
+    private By loginBtn = By.xpath(ta("loginBtn"));
     private By dropdownAllmanagers = By.xpath(ta("dropdownAllmanagers", ".//*[@id='ext-element-144']"));
-    private By firstManagerName = By.cssSelector(ta("dropdownAllmanagers", ".x-list-label"));
+    private By firstManagerName = By.cssSelector(ta("dropdownAllmanagers"));
+    //private By firstManagerName = By.cssSelector(ta("dropdownAllmanagers", ".x-list-label"));
 
 
     @BeforeTest
@@ -32,7 +33,7 @@ public class exampleTest {
         driver.findElement(dropdownAllmanagers).click();
         Thread.sleep(3000);
         driver.findElement(firstManagerName).click();
-        Thread.sleep(30000);
+        Thread.sleep(7000);
     }
 
     @AfterTest
