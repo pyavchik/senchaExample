@@ -11,9 +11,9 @@ import static io.trueautomation.client.TrueAutomationHelper.ta;
 
 public class exampleTest {
     private WebDriver driver;
-    private By loginBtn = By.xpath(ta("loginBtn"));
+    private By loginBtn = By.xpath(ta(   "loginBtn"));
     private By dropdownAllmanagers = By.xpath(ta("dropdownAllmanagers", ".//*[@id='ext-element-144']"));
-    private By firstManagerName = By.cssSelector(ta("dropdownAllmanagers"));
+    private By firstManagerName = By.cssSelector(ta(   "firstManagerName"));
     //private By firstManagerName = By.cssSelector(ta("dropdownAllmanagers", ".x-list-label"));
 
 
@@ -26,7 +26,7 @@ public class exampleTest {
     @Test
     public void exampleTest() throws InterruptedException {
         driver.get("http://examples.sencha.com/coworkee/#login");
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         driver.findElement(loginBtn).click();
         driver.get("http://examples.sencha.com/coworkee/#organizations");
         Thread.sleep(3000);
