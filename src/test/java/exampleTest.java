@@ -14,7 +14,7 @@ public class exampleTest {
     private By loginBtn = By.xpath(ta(   "loginBtn"));
     private By dropdownAllmanagers = By.xpath(ta("dropdownAllmanagers", ".//*[@id='ext-element-144']"));
     private By firstManagerName = By.cssSelector(ta(   "firstManagerName"));
-    //private By firstManagerName = By.cssSelector(ta("dropdownAllmanagers", ".x-list-label"));
+    //private By firstManagerName = By.cssSelector(ta("firstManagerName", ".x-list-label"));
 
 
     @BeforeTest
